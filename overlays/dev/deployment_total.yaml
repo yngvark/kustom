@@ -1,0 +1,12 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: the-deployment
+spec:
+  template:
+    spec:
+      lol:
+        BASE: false-THIS-IS-DEV
+      containers:
+        - image: registry/container:DEV
+          name: JEGERDEV
